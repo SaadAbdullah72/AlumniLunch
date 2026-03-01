@@ -20,7 +20,7 @@ const galleryItems = [
     { src: "/gallery/19.jpg.jpeg", height: 'auto' },
     { src: "/gallery/20.jpg.jpeg", height: '420px', objectPosition: 'top' },
     { src: "/gallery/22.jpg.jpeg", height: '420px', objectPosition: 'top' },
-    { src: "/gallery/23.jpg.jpeg", height: '420px', objectPosition: 'top' },
+    { src: "/gallery/23.jpg.jpeg", height: 'auto' },
     { src: "/gallery/24.jpg.jpeg", height: '420px', objectPosition: 'top' },
     { src: "/gallery/25.jpg.jpeg", height: '420px', objectPosition: 'top' },
     { src: "/gallery/26.jpg.jpeg", height: '420px', objectPosition: 'top' },
