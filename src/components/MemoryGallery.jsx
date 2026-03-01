@@ -14,7 +14,7 @@ const galleryItems = [
     { src: "/gallery/10.jpg.jpeg", height: '275px' },
     { src: "/gallery/11.jpg.jpeg", height: '345px' },
     { src: "/gallery/12.jpg.jpeg", height: '265px' },
-    { src: "/gallery/13.jpg.jpeg", height: '340px', objectPosition: 'top' },
+    { src: "/gallery/13.jpg.jpeg", height: '420px', objectPosition: 'top' },
     { src: "/gallery/14.jpg.jpeg", height: '335px' },
     { src: "/gallery/18.jpg.jpeg", height: '285px' },
     { src: "/gallery/19.jpg.jpeg", height: '310px' },
@@ -24,7 +24,8 @@ const galleryItems = [
     { src: "/gallery/23.jpg.jpeg", height: '325px' },
     { src: "/gallery/24.jpg.jpeg", height: '300px' },
     { src: "/gallery/25.jpg.jpeg", height: '345px' },
-    { src: "/gallery/26.jpg.jpeg", height: '270px' }
+    { src: "/gallery/26.jpg.jpeg", height: '270px' },
+    { src: "/gallery/27.jpg.jpeg", height: '420px', objectPosition: 'top' }
 ];
 
 const MemoryCard = ({ src, index, height, objectPosition = 'center' }) => {
