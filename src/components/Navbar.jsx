@@ -26,7 +26,7 @@ const Navbar = () => {
                     <GraduationCap size={32} color="var(--accent-color)" />
                 )}
                 <span style={{ fontWeight: 'bold', fontSize: '1.2rem', fontFamily: 'var(--font-heading)' }}>
-                    Alumni Lunch
+                    Legacy Lunch
                 </span>
             </Link>
             <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
