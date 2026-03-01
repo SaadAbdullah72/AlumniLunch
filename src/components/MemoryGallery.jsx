@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const galleryItems = [
     { src: "/gallery/1.jpg.jpg", height: '320px' },
-    { src: "/gallery/2.jpg.jpg", height: '260px' },
+    { src: "/gallery/2.jpg.jpeg", height: 'auto' },
     { src: "/gallery/3.jpg.jpg", height: '350px' },
     { src: "/gallery/4.jpg.jpg", height: '290px' },
     { src: "/gallery/5.jpg.jpg", height: '340px' },
@@ -23,7 +23,7 @@ const galleryItems = [
     { src: "/gallery/23.jpg.jpeg", height: 'auto' },
     { src: "/gallery/24.jpg.jpeg", height: '420px', objectPosition: 'top' },
     { src: "/gallery/25.jpg.jpeg", height: '420px', objectPosition: 'top' },
-    { src: "/gallery/26.jpg.jpeg", height: '420px', objectPosition: 'top' },
+    { src: "/gallery/26.jpg.jpg", height: '420px', objectPosition: 'top' },
     { src: "/gallery/27.jpg.jpeg", height: 'auto' }
 ];
 
