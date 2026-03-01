@@ -109,28 +109,58 @@ const Hero = ({ title }) => {
                     Join us for an afternoon of networking, nostalgia, and celebration.
                 </p>
 
-                <motion.a
-                    href={settings.registrationLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.5, duration: 0.5 }}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        textDecoration: 'none',
-                        padding: '16px 40px',
-                        fontSize: '1.1rem',
-                        boxShadow: '0 0 30px rgba(245, 158, 11, 0.3)',
-                        letterSpacing: '1px'
-                    }}
-                >
-                    Register Now
-                </motion.a>
+                <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                    <motion.a
+                        href={settings.registrationLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.5, duration: 0.5 }}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            textDecoration: 'none',
+                            padding: '16px 40px',
+                            fontSize: '1.1rem',
+                            boxShadow: '0 0 30px rgba(245, 158, 11, 0.3)',
+                            letterSpacing: '1px'
+                        }}
+                    >
+                        Register as Student
+                    </motion.a>
+
+                    <motion.a
+                        href={settings.alumniRegistrationLink || settings.registrationLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-secondary"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.6, duration: 0.5 }}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            textDecoration: 'none',
+                            padding: '16px 40px',
+                            fontSize: '1.1rem',
+                            border: '2px solid #06b6d4',
+                            color: '#ffffff',
+                            borderRadius: '50px',
+                            boxShadow: '0 0 30px rgba(6, 182, 212, 0.3)',
+                            letterSpacing: '1px',
+                            background: 'rgba(6, 182, 212, 0.1)',
+                            backdropFilter: 'blur(5px)'
+                        }}
+                    >
+                        Register as Alumni
+                    </motion.a>
+                </div>
             </motion.div>
 
             <motion.div

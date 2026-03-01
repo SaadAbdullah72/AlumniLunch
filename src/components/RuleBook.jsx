@@ -3,14 +3,19 @@ import { motion } from 'framer-motion';
 
 const RuleBook = () => {
     return (
-        <section style={{
+        <section id="rulebook" style={{
             padding: '120px 20px',
             position: 'relative',
             overflow: 'hidden',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            background: 'radial-gradient(ellipse at center, rgba(6, 182, 212, 0.15) 0%, transparent 70%)',
+            borderTop: '1px solid rgba(6, 182, 212, 0.2)',
+            borderBottom: '1px solid rgba(6, 182, 212, 0.2)',
+            marginTop: '40px',
+            boxShadow: '0 0 50px rgba(6, 182, 212, 0.1)'
         }}>
             {/* Background elements */}
             <div style={{

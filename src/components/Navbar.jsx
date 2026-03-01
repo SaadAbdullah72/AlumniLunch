@@ -29,7 +29,10 @@ const Navbar = () => {
                     Alumni Lunch
                 </span>
             </Link>
-            <div>
+            <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                <a href="#rulebook" style={{ color: 'var(--accent-color)', textDecoration: 'none', fontWeight: 'bold', fontSize: '0.95rem', background: 'rgba(245, 158, 11, 0.1)', padding: '6px 12px', borderRadius: '20px', border: '1px solid rgba(245, 158, 11, 0.3)' }}>
+                    Rule Book
+                </a>
                 <Link to="/admin" style={{ color: 'var(--text-color)', textDecoration: 'none', opacity: 0.7, fontSize: '0.9rem' }}>
                     Admin Login
                 </Link>

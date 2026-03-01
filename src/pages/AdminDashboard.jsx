@@ -170,11 +170,23 @@ const AdminDashboard = () => {
                         </div>
 
                         <div className="form-group">
-                            <label style={{ display: 'block', marginBottom: '10px', color: '#94a3b8' }}>Registration Link</label>
+                            <label style={{ display: 'block', marginBottom: '10px', color: '#94a3b8' }}>Student Registration Link</label>
                             <input
                                 type="text"
                                 name="registrationLink"
-                                value={formData.registrationLink}
+                                value={formData.registrationLink || ''}
+                                onChange={handleChange}
+                                placeholder="https://docs.google.com/forms/..."
+                                style={inputStyle}
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <label style={{ display: 'block', marginBottom: '10px', color: '#94a3b8' }}>Alumni Registration Link</label>
+                            <input
+                                type="text"
+                                name="alumniRegistrationLink"
+                                value={formData.alumniRegistrationLink || ''}
                                 onChange={handleChange}
                                 placeholder="https://docs.google.com/forms/..."
                                 style={inputStyle}

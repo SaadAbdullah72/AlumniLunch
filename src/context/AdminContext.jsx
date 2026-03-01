@@ -14,6 +14,7 @@ const defaultSettings = {
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     videoRotation: 0,
     registrationLink: "https://docs.google.com/forms",
+    alumniRegistrationLink: "https://docs.google.com/forms",
 };
 
 // IndexedDB Helpers
