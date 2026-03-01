@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const RuleBook = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
     return (
         <section style={{
             padding: '100px 20px',
@@ -119,16 +121,49 @@ const RuleBook = () => {
                         minHeight: '500px',
                         borderRadius: '16px',
                         overflow: 'hidden',
-                        position: 'relative'
+                        position: 'relative',
+                        background: '#0f172a'
                     }}>
+                        {isLoading && (
+                            <div style={{
+                                position: 'absolute',
+                                inset: 0,
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                zIndex: 10,
+                                color: '#06b6d4'
+                            }}>
+                                <motion.div
+                                    animate={{ rotate: 360 }}
+                                    transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                                    style={{
+                                        width: '40px',
+                                        height: '40px',
+                                        border: '3px solid rgba(6, 182, 212, 0.2)',
+                                        borderTopColor: '#06b6d4',
+                                        borderRadius: '50%',
+                                        marginBottom: '16px'
+                                    }}
+                                />
+                                <p style={{ fontSize: '0.9rem', color: '#94a3b8', letterSpacing: '1px' }}>
+                                    Loading High-Quality Rulebook...
+                                </p>
+                            </div>
+                        )}
+
                         <iframe
                             src="/gallery/rulebook.pdf#toolbar=0&navpanes=0&scrollbar=0"
                             title="Rulebook PDF"
                             width="100%"
                             height="100%"
+                            onLoad={() => setIsLoading(false)}
                             style={{
                                 border: 'none',
-                                background: '#f8fafc' // Slightly light background for PDF contrast
+                                background: '#f8fafc',
+                                opacity: isLoading ? 0 : 1,
+                                transition: 'opacity 0.6s ease'
                             }}
                         />
                     </div>
