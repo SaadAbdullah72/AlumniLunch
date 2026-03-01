@@ -9,12 +9,21 @@ const images = [
     "/gallery/5.jpg.jpg",
     "/gallery/6.jpg.jpg",
     "/gallery/7.jpg.jpg",
-    "/gallery/8.jpg.jpg"
+    "/gallery/8.jpg.jpg",
+    "/gallery/9.jpg.jpeg",
+    "/gallery/10.jpg.jpeg",
+    "/gallery/11.jpg.jpeg",
+    "/gallery/12.jpg.jpeg",
+    "/gallery/13.jpg.jpeg",
+    "/gallery/14.jpg.jpeg",
+    "/gallery/18.jpg.jpeg"
 ];
 
 const cardHeights = [
     '320px', '260px', '350px', '290px',
-    '340px', '280px', '310px', '270px'
+    '340px', '280px', '310px', '270px',
+    '330px', '275px', '345px', '265px',
+    '300px', '335px', '285px'
 ];
 
 const MemoryCard = ({ src, index, height }) => {
